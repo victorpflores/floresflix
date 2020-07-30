@@ -16,7 +16,7 @@ function Footer() {
         {' '}
         por
         {' '}
-        <a href="">
+        <a href="/">
            Victor Flores
         </a>
       </p>
