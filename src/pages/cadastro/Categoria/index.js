@@ -27,7 +27,7 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
-    const URL_TOP = 'https://floresflix.herokuapp.com/categorias';
+    const URL_TOP = window.location.hostname.includes('localhost') ? 'http://localhost:8080/categorias' : 'https://floresflix.herokuapp.com/categorias';
     fetch(URL_TOP)
       .then(async (respostaServidor) => {
         const resposta = await respostaServidor.json();
